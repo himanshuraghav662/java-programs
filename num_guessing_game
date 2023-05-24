@@ -1,6 +1,5 @@
 package opps.programs;
 
-
 import java.util.Scanner;
 
 public class num_guessing {
@@ -10,8 +9,8 @@ public class num_guessing {
             int min = 1;
             int range = max - min + 1;
             int n = (int) (Math.random() * range) + min;
-            System.out.println("you will get 6 turns to guess the number");
-            for (int k = 1; k <= 6; k++) {
+            System.out.println("number guessing game starts....");
+            for (int k = 1; k <= 100; k++) {
                 System.out.println("enter your " + k + " number");
                 int a = scan.nextInt();
                 if (a == n) {
