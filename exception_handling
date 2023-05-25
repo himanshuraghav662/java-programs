@@ -1,0 +1,28 @@
+import java.util.Scanner;
+
+
+class YoungAgeException extends RuntimeException {
+    YoungAgeException(String msg) {
+        super(msg);
+    }
+}
+
+class Exception_Handling {
+    public static void main(String[] args) {
+        try (Scanner sc = new Scanner(System.in)) {
+            System.out.println("Enter the name :-");
+            String name = sc.nextLine();
+            System.out.println("Enter tour Age:-");
+            int age = sc.nextInt();
+            if (age < 18 && age > 0) {
+                int Nage = 18 - age;
+                throw new YoungAgeException(
+                        name + " you are under age, You are eligible for this movie after " + Nage + " years!!!");
+            } else if (age <= 0) {
+                throw new YoungAgeException("Enter valid Age " + name);
+            } else {
+                System.out.println("Ticket booked successfully");
+            }
+        }
+    }
+}
