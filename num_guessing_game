@@ -9,7 +9,7 @@ public class num_guessing {
             int min = 1;
             int range = max - min + 1;
             int n = (int) (Math.random() * range) + min;
-            System.out.println("number guessing game starts....");
+            System.out.println("number guessing game starts......");
             for (int k = 1; k <= 100; k++) {
                 System.out.println("enter your " + k + " number");
                 int a = scan.nextInt();
