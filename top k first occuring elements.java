@@ -1,3 +1,6 @@
+//#### use stack for better time complexity ###
+
+
 class Solution {
     public int[] topKFrequent(int[] nums, int k) {
         Arrays.sort(nums);
